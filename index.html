@@ -231,10 +231,19 @@
     aspect-ratio:16/10;
     display:flex; align-items:center; justify-content:center;
     color:#fff;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
   }
-  .card-media svg{width:46%; height:46%;}
+  .card-media::after{
+    content:"";
+    position:absolute; inset:0;
+    z-index:1;
+    background:linear-gradient(180deg, rgba(8,20,34,0) 55%, rgba(8,20,34,.55) 100%);
+  }
   .card-media .tag{
     position:absolute; top:.9rem; left:.9rem;
+    z-index:2;
     background:rgba(255,255,255,.92); color:var(--ink);
     font-size:.68rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
     padding:.32rem .7rem; border-radius:100px;
@@ -466,10 +475,8 @@
       <div class="cards" id="cardGrid">
 
         <article class="card reveal" data-name="Gateway of India">
-          <div class="card-media" style="background:linear-gradient(150deg,#1F6F63,#0E2238);">
+          <div class="card-media" style="background-image: url(https://omkark610.github.io/Mumbai-Local-Guide/images/Gateway-of-India.jpg);">
             <span class="tag">Landmark</span>
-            <svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="1.6"><path d="M8 40h32M10 40V22M38 40V22M14 22V12c0-6 20-6 20 0v10"/><path d="M14 22h20"/></svg>
-            <span class="ph-label">Illustration</span>
           </div>
           <div class="card-body">
             <h3>Gateway of India</h3>
@@ -488,10 +495,8 @@
         </article>
 
         <article class="card reveal" data-name="Marine Drive">
-          <div class="card-media" style="background:linear-gradient(150deg,#E8562D,#173654);">
+          <div class="card-media" style="background-image: url(https://omkark610.github.io/Mumbai-Local-Guide/images/Marine-Drive.jpg);">
             <span class="tag">Promenade</span>
-            <svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="1.6"><path d="M4 34c6-6 10-6 16 0s10 6 16 0"/><path d="M4 40c6-6 10-6 16 0s10 6 16 0"/><path d="M8 34V16M16 34V10M24 34V18M32 34V8M40 34V20"/></svg>
-            <span class="ph-label">Illustration</span>
           </div>
           <div class="card-body">
             <h3>Marine Drive</h3>
@@ -510,10 +515,8 @@
         </article>
 
         <article class="card reveal" data-name="CSMT">
-          <div class="card-media" style="background:linear-gradient(150deg,#173654,#F2A65A);">
+          <div class="card-media" style="background-image: url(https://omkark610.github.io/Mumbai-Local-Guide/images/Chhatrapati-Shivaji-Maharaj-Terminus.jpg);">
             <span class="tag">UNESCO Site</span>
-            <svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="1.6"><path d="M10 42V18l14-10 14 10v24"/><path d="M10 42h28M18 42V26h12v16"/><path d="M24 8V4M20 4h8"/></svg>
-            <span class="ph-label">Illustration</span>
           </div>
           <div class="card-body">
             <h3>Chhatrapati Shivaji Maharaj Terminus</h3>
@@ -532,10 +535,8 @@
         </article>
 
         <article class="card reveal" data-name="Elephanta Caves">
-          <div class="card-media" style="background:linear-gradient(150deg,#1F6F63,#173654);">
+          <div class="card-media" style="background-image: url(https://omkark610.github.io/Mumbai-Local-Guide/images/Elephanta-Island.jpg);">
             <span class="tag">Island</span>
-            <svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="1.6"><path d="M6 30c6-14 30-14 36 0"/><path d="M12 30v10h24V30"/><path d="M20 40v-8a4 4 0 018 0v8"/><path d="M4 40h40"/></svg>
-            <span class="ph-label">Illustration</span>
           </div>
           <div class="card-body">
             <h3>Elephanta Caves</h3>
@@ -554,10 +555,8 @@
         </article>
 
         <article class="card reveal" data-name="Siddhivinayak Temple">
-          <div class="card-media" style="background:linear-gradient(150deg,#E8562D,#F2A65A);">
+          <div class="card-media" style="background-image: url(https://omkark610.github.io/Mumbai-Local-Guide/images/Siddhivinayak_Temple_Ganpati.jpg);">
             <span class="tag">Temple</span>
-            <svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="1.6"><path d="M24 6v10M18 12h12"/><path d="M14 30l10-14 10 14"/><path d="M10 30h28l-4 10H14z"/></svg>
-            <span class="ph-label">Illustration</span>
           </div>
           <div class="card-body">
             <h3>Siddhivinayak Temple</h3>
@@ -576,10 +575,8 @@
         </article>
 
         <article class="card reveal" data-name="Atal Setu">
-          <div class="card-media" style="background:linear-gradient(150deg,#173654,#1F6F63);">
+          <div class="card-media" style="background-image: url(https://omkark610.github.io/Mumbai-Local-Guide/images/Atal-Setu.jpg);">
             <span class="tag">Sea Bridge</span>
-            <svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="1.6"><path d="M4 34h40"/><path d="M12 34V16M36 34V16"/><path d="M12 16l12-12 12 12"/><path d="M4 34c4-4 8 4 12 0s8 4 12 0 8 4 12 0"/></svg>
-            <span class="ph-label">Illustration</span>
           </div>
           <div class="card-body">
             <h3>Mumbai Atal Setu</h3>
